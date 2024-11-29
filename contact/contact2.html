@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="contact2.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Press+Start+2P&display=swap"
+            rel="stylesheet"
+        />
+        <title>MusicBar</title>
+   </head>
+
+   <body>
+        <!-- navigation bar -->
+        <header>
+            <div class="top-nav" id="top-nav">
+                <a class="brand" href="index2.html"><h2>Music<em>Bar</em></h2></a>
+                <ul class="nav-links">
+          
+                <li><a class="links" href="..\home\index2.html">Home</a></li>
+                <li><a class="links" href="..\Shop\shop2.html">Shop</a></li>
+                <li><a class="links" href="..\about\about2.html">About Us</a></li>
+                <li id="active"><a class="links" href="contact2.html">Contact Us</a></li>
+                <li><a class="links" href="..\blog\blog2.html">Info</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <h1>Contact</h1>
+        <div class="checkout-form">
+            <!-- Section  (contact
+                ) -->
+            <div class="flex-column1">
+                <div class="svg1">
+                    <img src="../img/contact/user.svg" alt="use icon">
+                </div>
+                <h3></h3>
+                <form action="http://localhost/CW/contact/connect.php" method="POST">
+                    <label for="fill-billing1">Full Name</label><br>
+                    <input type="text" id = "Name" size="60"  name="Name" placeholder="Tom Lewis" size="23" autocomplete="on" required><br>
+                
+                    <label for="fill-billing2">Email</label><br>
+                    <input type="email" id = "email" size="60" name="email" placeholder="tom@example.com" autocomplete="on" required><br>
+                
+                    <label for="fill-billing3">Description</label><br>
+                    <input type="textarea" id = "desc" size="60" rows="6" cols="60" name="address" placeholder="Type......" autocomplete="on" required><br>
+
+                    <div class="btns">
+                        <button id = "pay">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="social-media">
+                <a class="social-media" href="https://www.instagram.com/"><img src="..\img\icons8-instagram.svg" alt=""></a>
+                <a class="social-media" href="https://www.youtube.com/"><img src="..\img\icons8-youtube-47.png" alt=""></a>
+                <a class="social-media" href="https://web.facebook.com/login/?_rdc=1&_rdr"><img src="..\img\icons8-facebook.svg" alt=""></a>
+                <div id = "creator">Created by
+                  <a href="../Editor/index.html" id = "creator-name">  M.H.Gunawardena (Page Editor)</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="contact2.js"></script>
+    </body>
+</html>

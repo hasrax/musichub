@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout2.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <div class="checkout-form">
+        <!-- Section 1 (Billing) -->
+        <div class="flex-column1">
+            <div class="svg1">
+                <img src="..\..\img\checkout\user.svg" alt="use icon">
+            </div>
+            <h3>Billing Details</h3>
+            <form action>
+                <label for="fill-billing1">Full Name</label><br>
+                <input type="text" id = "fill-billing1" name="firstname" placeholder="Tom Lewis" size="23" autocomplete="on" required><br>
+            </form>
+            <form>
+                <label for="fill-billing2">Email</label><br>
+                <input type="email" id = "fill-billing2" name="email" placeholder="tom@example.com" autocomplete="on" required><br>
+            </form>
+            <form>
+                <label for="fill-billing3">Address</label><br>
+                <input type="text" id = "fill-billing3" name="address" placeholder="No.25 Field Street" autocomplete="on" required><br>
+            </form>
+            <form>
+                <label for="fill-billing4">Telephone</label><br>
+                <input type="tel" id = "fill-billing4" name="city" placeholder="Contact" pattern="[0-9]*" autocomplete="on" required><br>
+            </form>
+        </div>
+        <!-- Section 2 (Card) -->
+        <div class="flex-column2">
+            <img  class="svg2" src="..\..\img\checkout\card.svg" alt="card icon">
+            <h3>Card Details</h3>
+            <form>
+                <label for="fill-card1">Card number</label><br>
+                <input type="text" id = "fill-card1" name="cname" placeholder="xxxx-xxxx-xxxx-xxxx" size="25" minlength="19" maxlength="19" required><br>
+            </form>
+            <form>
+                <label for="fill-card2">Exp date</label><br>
+                <input type="text" id = "fill-card2" name = "exp"  placeholder="MM/YR" size="4" maxlength="5" minlength="5" required><br>
+            </form>
+            <form>
+                <label for="fill-card3">CVV</label><br>
+                <input type="number" id = "fill-card3" name="code" placeholder="xxx" max="999" required><br>
+            </form>
+            <div id = "valid-cards">Acceptable cards: <br>Visa / Mastercard / Paypal</div>
+        </div>
+    </div>
+    <!-- Checkout buttons -->
+    <div class="btns">
+        <button id = "pay">Proceed to pay</button>
+    </div>
+
+    <div class="footer-container">
+        <div class="social-media">
+            <a class="social-media" href="https://www.instagram.com/"><img src="..\..\img\icons8-instagram.svg" alt=""></a>
+            <a class="social-media" href="https://www.youtube.com/"><img src="..\..\img\icons8-youtube-47.png" alt=""></a>
+            <a class="social-media" href="https://web.facebook.com/login/?_rdc=1&_rdr"><img src="..\..\img\icons8-facebook.svg" alt=""></a>
+            <div id = "creator">Created by
+              <a href="../Editor/index.html" id = "creator-name">  M.H.Gunawardena (Page Editor)</a>
+            </div>
+        </div>
+
+        <!-- Purchased message -->
+        <div id="popup-container">
+            <div class="popup">Thank You for purchasing..</div>
+        </div>
+        <div id="popup-overlay"></div>
+
+    </div>
+
+    <script src="checkout2.js"></script>
+</body>
+</html>
+
